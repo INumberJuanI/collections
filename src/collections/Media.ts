@@ -5,7 +5,9 @@ export const Media: CollectionConfig = {
   access: {
     read: () => true,
   },
-  userAsTitle: 'title',
+  admin: {
+    useAsTitle: 'title',
+  },
   fields: [
     {
       name: 'title',
