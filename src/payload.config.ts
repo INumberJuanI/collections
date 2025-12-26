@@ -30,6 +30,11 @@ export default buildConfig({
       connectionString: process.env.POSTGRES_URL || '',
     },
   }),
+  upload: {
+    limits: {
+      fileSize: 50000000, // 50MB
+    },
+  },
   sharp,
   plugins: [
     vercelBlobStorage({
