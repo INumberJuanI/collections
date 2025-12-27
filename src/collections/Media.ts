@@ -1,3 +1,4 @@
+import { revalidatePage } from '@/hooks/revalidatePage'
 import type { CollectionConfig } from 'payload'
 
 export const Media: CollectionConfig = {
@@ -7,6 +8,9 @@ export const Media: CollectionConfig = {
   },
   admin: {
     useAsTitle: 'title',
+  },
+  hooks: {
+    afterChange: [revalidatePage],
   },
   fields: [
     {
