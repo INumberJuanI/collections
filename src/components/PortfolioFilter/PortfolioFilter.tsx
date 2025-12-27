@@ -93,7 +93,7 @@ export async function PortfolioFilter({
                     aspectRatio={aspectRatio}
                     title="Neue Figur?"
                     bgText="+"
-                    link={{ href: '/dashboard/collections/items/create', label: 'Hinzufügen' }}
+                    link={{ href: '/dashboard/collections/media/create', label: 'Hinzufügen' }}
                   />
                 )}
               </div>
