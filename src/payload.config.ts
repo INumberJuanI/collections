@@ -19,7 +19,7 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
     components: {
-      beforeDashboard: ['/components/BeforeDashboard'],
+      beforeDashboard: ['@/components/BeforeDashboard#BeforeDashboard'],
     },
   },
   collections: [Users, Media],

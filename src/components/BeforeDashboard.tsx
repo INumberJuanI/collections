@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-const BeforeDashboard = () => {
+export const BeforeDashboard = () => {
   return (
     <div
       className="widget"
