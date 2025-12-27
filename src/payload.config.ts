@@ -36,6 +36,9 @@ export default buildConfig({
     },
   },
   sharp,
+  routes: {
+    admin: '/dashboard',
+  },
   plugins: [
     vercelBlobStorage({
       enabled: true,
