@@ -1,3 +1,4 @@
+import { revalidatePath } from 'next/cache'
 import type { CollectionAfterChangeHook } from 'payload'
 
 // ensure that the home page is revalidated at '/' instead of '/home'
@@ -30,6 +31,7 @@ export const revalidatePage: CollectionAfterChangeHook = ({ doc, req }) => {
   }
 
   revalidate()
+  revalidatePath('/')
 
   return doc
 }
